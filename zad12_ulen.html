@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 12 - ule</title>
+</head>
+
+
+<script>
+  var D1_ule = parseInt(prompt("Podaj pierwszy dzień stycznia (D1_ule):"));
+  var G1_ule = parseInt(prompt("Podaj godzinę pierwszego dnia (G1_ule):"));
+  var D2_ule = parseInt(prompt("Podaj drugi dzień stycznia (D2_ule):"));
+  var G2_ule = parseInt(prompt("Podaj godzinę drugiego dnia (G2_ule):"));
+
+  var sekundy = ((D1_ule - D2_ule) * 24 + (G1_ule - G2_ule)) * 3600;
+
+  document.write("Ilość sekund = " + sekundy + " sekund");
+</script>
+
+</body>
+</html>

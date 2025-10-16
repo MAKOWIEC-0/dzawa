@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let m_ule = parseInt(prompt("Podaj wartoœæ m (naturalna > 0):", "4"));
+
+    if (m_ule > 0) {
+        let a = m_ule + 2;
+        let b = (m_ule + 1) * (m_ule + 2);
+        let c = m_ule * (m_ule + 1);
+        document.write("m = " + m_ule + "<br>")
+        document.write("1/" + m_ule + " = 1/" + a + " + 1/" + b + " + 1/" + c);
+    } else {
+        document.write("B³¹d: m musi byæ wiêksze od 0");
+    }
+</script>
+</body>
+</html>

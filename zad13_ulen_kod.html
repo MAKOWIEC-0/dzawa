@@ -1,0 +1,26 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+ <html>
+ <body>
+ <div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+let m_ule = parseInt(prompt("Podaj wartoœæ m (naturalna > 0):", "4"));
+
+    if (m_ule > 0) {
+        let a = m_ule + 1;
+        let b = m_ule * (m_ule + 1);
+
+        document.write("m = " + m_ule + "<br>")
+        document.write("1/" + m_ule + " = 1/" + a + " + 1/" + b);
+    } else {
+        document.write("B³¹d: m musi byæ wiêksze od 0");
+    }
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_ulenberg()"/>
+ </body>
+ </html>
+ </textarea>
+ </body>
+</html>
