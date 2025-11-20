@@ -1,0 +1,40 @@
+<html>
+  <body> 
+    <textarea cols="100" rows="35">
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function odejmowanie_ule(a, b) {
+ return a - b;
+}
+ function mnożenie_ule(a, b) {
+ return a * b;
+ }
+function suma_ule(a, b) {
+ return a + b;
+}
+function do_kwadrat_ule(a, b) {
+ return "a="+(a*a)+ " b=" +(b*b);
+}
+function reszta_z_dzielenia_a_przez_b_ule(a, b) {
+ return a % b;
+}
+ document.write("odejmowanie="+odejmowanie_ule(a,b)+"<br>");
+ document.write("mnożenie="+mnożenie_ule(a,b)+"<br>");
+ document.write("suma="+suma_ule(a,b)+"<br>");
+ document.write("do kwadratu="+do_kwadrat_ule(a,b)+"<br>");
+ document.write("reszta_z_dzielenia_a_przez_b_ule="+ reszta_z_dzielenia_a_przez_b_ule(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html>
+  </textarea>
+  </body>
+</html>
