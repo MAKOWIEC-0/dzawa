@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+var x1_ule = parseFloat(prompt("Podaj x1:", ""));
+var x2_ule = parseFloat(prompt("Podaj x2:", ""));
+
+document.write("wczytane liczby: x1=" + x1_ule + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2=" + x2_ule + "<br><br>");
+
+var wykladnik = 6 / (6 + 2);
+var y1 = 3 * Math.pow(x1_ule, wykladnik);
+document.write("y1 = " + y1.toFixed(2) + "<br><br>");
+
+var x1_rad = (x1_ule * Math.PI) / 180;
+var y2 = 2 * Math.cos(x1_rad) + 3 * Math.sin(x1_rad);
+
+document.write("x1 w stopniach = " + x1_ule + " [stopnie] &nbsp; ");
+document.write("x1 w radianach = " + x1_rad.toFixed(2) + " [rad]<br><br>");
+document.write("y2 = " + y2.toFixed(2) + "<br><br>");
+
+var y3 = Math.cbrt( Math.pow(x1_ule,5) + 2 * Math.pow(x2_ule,4) * Math.abs(x1_ule - x2_ule) );
+
+document.write("y3 = " + y3.toFixed(2) + "<br><br>");
+document.write("x1 = " + x1_ule);
+</script>
+</body>
+</html>

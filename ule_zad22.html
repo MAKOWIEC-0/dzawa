@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>Obliczanie pola i obwodu prostokąta – Ulenberg</h1>
+
+<script type="text/javascript">
+function Pole_ule(a_ule, b_ule) {
+    return a_ule * b_ule;
+}
+
+function Obwod_ule(a_ule, b_ule) {
+    return 2 * (a_ule + b_ule);
+}
+
+function oblicz_ule() {
+    var a_ule = parseFloat(document.getElementById('a_dana_ule').value);
+    var b_ule = parseFloat(document.getElementById('b_dana_ule').value);
+
+    var pole = Pole_ule(a_ule, b_ule);
+    var obw = Obwod_ule(a_ule, b_ule);
+
+    document.getElementById('wyprowadz_pole_ule').value = pole.toFixed(2);
+    document.getElementById('wyprowadz_obwod_ule').value = obw.toFixed(2);
+}
+</script>
+
+<p>Podaj długości boków prostokąta:</p>
+A: <input type="text" id="a_dana_ule" size="5"><br><br>
+B: <input type="text" id="b_dana_ule" size="5"><br><br>
+
+<input type="button" value="Oblicz" onclick="oblicz_ule()"><br><br>
+
+Pole: <input type="text" id="wyprowadz_pole_ule" size="10"><br><br>
+Obwód: <input type="text" id="wyprowadz_obwod_ule" size="10"><br><br>
+
+</body>
+</html>
