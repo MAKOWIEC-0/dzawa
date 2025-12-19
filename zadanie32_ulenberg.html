@@ -1,0 +1,27 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function komputer(Marka_k,cena_k,Processor_k)//początek konstruktora 
+  { 
+   this.Marka=Marka_k; 
+   this.cena=cena_k; 
+   this.Processor=Processor_k;   
+  }//koniec konstruktora 
+              komputer.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.Marka + ' ' + this.cena+ ' ' + this.Processor); 
+      }; 
+  var osoba1 = new komputer("AMD", "duża", "AMD Ryzen 5 9600X"); // nowy obiekt osoba1 
+  var osoba2 = new komputer('Intel', 'też duża', 'Intel i9-14900K'); 
+  osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  osoba2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("klient pierwszy"+"   "+osoba1.Marka+"   "+osoba1.cena+"   "+osoba1.Processor); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>
