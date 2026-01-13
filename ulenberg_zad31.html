@@ -1,0 +1,31 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var komputer = {
+Marka: 'AMD',
+Procesor: 'Ryzen 7 9800X3D',
+Rdzenie: '8',
+pokaz: function ()
+{
+ document.write(this.Marka + ' ' + this.Procesor)
+ }
+}
+komputer.pokaz();
+komputer.wątki=16;
+komputer.wypisz=function() {alert('Wątki: ' + this.wątki + ' wątków')}
+komputer.wypisz();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to komputer<br>
+ Pola:<br>
+ Marka<br>
+ Procesor<br>
+ Rdzenie<br>
+ metoda: pokaz<br>
+ nowe pole to wątki <br>
+ nowa metoda to wypisz();<br>
+</body>
+</html>
