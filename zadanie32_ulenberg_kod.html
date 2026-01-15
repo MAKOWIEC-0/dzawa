@@ -3,33 +3,36 @@
     <textarea cols="80" rows="30">
 <html> 
      <head> 
-       <body> 
            <script type="text/javascript"> 
-              function komputer(Marka_k,Rdzenie_k,Processor_k)//początek konstruktora 
+              function komputer(Marka_k,Rdzenie_k,Processor_k)
   { 
    this.Marka=Marka_k; 
    this.Rdzenie=Rdzenie_k; 
    this.Processor=Processor_k;   
-  }//koniec konstruktora 
-              komputer.prototype.wypisz = function () //definicja metody 
+  }
+              komputer.prototype.wypisz = function () 
       { 
          alert(this.Marka + ' ' + this.Rdzenie+ ' ' + this.Processor); 
       }; 
-  var osoba1 = new komputer("AMD", "8", "AMD Ryzen 5 9600X"); // nowy obiekt osoba1 
-  var osoba2 = new komputer('Intel', '12', 'Intel i9-14900K'); 
-  osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
-  osoba2.wypisz(); 
+  var osoba1 = new komputer("AMD", "8", "AMD Ryzen 5 9600X"); 
+  var osoba2 = new komputer("Intel", "12", "Intel i9-14900K");
                 document.write("dostęp do właściwości"+"<br>"); 
-// poniżej dostęp do pól osoby1 
-     document.write("klient pierwszy"+"   "+osoba1.Marka+"   "+osoba1.Rdzenie+"   "+osoba1.Processor); 
+     document.write("klient pierwszy"+"   "+osoba1.Marka+"   "+osoba1.Rdzenie+"   "+osoba1.Processor); <br>
                  document.write("klient drugi"+"   "+osoba2.Marka+"   "+osoba2.Rdzenie+"   "+osoba2.Processor); 
+    osoba1.wypisz(); 
+    osoba2.wypisz();
+    
             </script> 
      </head> 
-
+     <body>
+    <br>
+    programowanie obiektowe
 </body> 
 
 </html>
+
  </textarea>
   </body>
 
 </html>
+
