@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<title>Ulenberg Z40_JS</title>
+</head>
+<body>
+
+<div style="color:red;font-size:50px;">
+<script>
+var x_ule = parseFloat(prompt("Podaj x:", ""));
+
+document.write("wykonał Maksymilian Ulenberg<br>");
+document.write("czytany argument x = " + x_ule + "<br>");
+
+var f_ule;
+
+if(x_ule >= 1)
+{
+    f_ule = 1 * x_ule;
+}
+else if(x_ule >= -2 && x_ule < 1)
+{
+    f_ule = 2 * x_ule + 4;
+}
+else
+{
+    f_ule = 4 * x_ule;
+}
+
+document.write("f(x) = " + f_ule.toFixed(2) + "<br>");
+</script>
+</div>
+
+</body>
+</html>
+<!-- Ulenberg Z40_JS -->
