@@ -1,0 +1,150 @@
+<html>
+  <body> 
+    <textarea cols="100" rows="38">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Ulenberg Z41_JS</title>
+<style>
+h1 { text-transform: uppercase; }
+</style>
+</head>
+
+<body>
+
+<h1>Proste działania - Ulenberg klasa 3</h1>
+
+<label for="a">Podaj pierwszą liczbę:</label>
+<input type="number" id="a">
+<br><br>
+
+<label for="b">Podaj drugą liczbę:</label>
+<input type="number" id="b">
+<br><br>
+
+<input type="button" value="DODAWANIE" onclick="suma_ule()">
+<input type="button" value="ODEJMOWANIE" onclick="roznica_ule()">
+<input type="button" value="MNOŻENIE" onclick="iloczyn_ule()">
+<input type="button" value="DZIELENIE" onclick="iloraz_ule()">
+<br><br>
+
+<input type="button" value="TEORIA-Ulenberg" onclick="teoria_ule()">
+
+<div id="wynik" style="margin-top:20px;"></div>
+
+<script>
+
+function suma_ule()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+
+if(a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+}
+else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var wynik = (a + b).toFixed(2);
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + wynik;
+}
+}
+
+function roznica_ule()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+
+if(a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+}
+else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var wynik = (a - b).toFixed(2);
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + wynik;
+}
+}
+
+function iloczyn_ule()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+
+if(a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+}
+else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+var wynik = (a * b).toFixed(2);
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + wynik;
+}
+}
+
+function iloraz_ule()
+{
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+
+if(a == "" || b == "")
+{
+document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+}
+else
+{
+a = parseFloat(a);
+b = parseFloat(b);
+
+if(b == 0)
+{
+document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+}
+else
+{
+var wynik = (a / b).toFixed(2);
+document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + wynik;
+}
+}
+}
+
+function teoria_ule()
+{
+document.write("<font color=green size=4>1. Linia kodu</font><br>");
+document.write("<font color=red size=4>&lt;label for=\"a\"&gt;Podaj pierwszą liczbę:&lt;/label&gt; &lt;input type=\"number\" id=\"a\"&gt;</font><br>");
+document.write("<font color=green size=4>Tworzy etykietę i pole do wpisania liczby.</font><br><br>");
+
+document.write("<font color=green size=4>2. Linia kodu</font><br>");
+document.write("<font color=red size=4>&lt;input type=\"button\" value=\"DODAWANIE\" onclick=\"suma_ule()\"&gt;</font><br>");
+document.write("<font color=green size=4>Tworzy przycisk uruchamiający funkcję dodawania.</font><br><br>");
+
+document.write("<font color=green size=4>3. Linia kodu</font><br>");
+document.write("<font color=red size=4>var a = document.getElementById(\"a\").value;</font><br>");
+document.write("<font color=green size=4>Pobiera wartość z pola a.</font><br><br>");
+
+document.write("<font color=green size=4>4. Linia kodu</font><br>");
+document.write("<font color=red size=4>if (a == \"\" || b == \"\")</font><br>");
+document.write("<font color=green size=4>Sprawdza czy pola są puste.</font><br><br>");
+
+document.write("<font color=green size=4>5. Linia kodu</font><br>");
+document.write("<font color=red size=4>document.getElementById(\"wynik\").innerHTML = \"Wynik działania wynosi: \" + suma;</font><br>");
+document.write("<font color=green size=4>Wyświetla wynik na stronie.</font><br>");
+}
+
+</script>
+
+</body>
+</html>
+<!-- Ulenberg Z41_JS -->
+</textarea>
+</body>
+</html>
+
+<!-- Ulenberg Z41_KOD -->	
