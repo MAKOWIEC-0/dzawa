@@ -1,19 +1,35 @@
-<!DOCTYPE html>  
-<html lang="pl-PL">  
-                              <meta charset="UTF-8">
-                              <title>Ulenberg Z39_JS</title> 
-     <body> 
-  <input type="button" name="Ulenberg" value="Oblicz" onclick="fun_ule()" /> 
-  <script> 
-    function fun_ule() { 
-      var x_ule = prompt("Podaj kolor", ""); 
-        if(x_ule == 1 || x_ule.toLowerCase() == "czerwony") { 
-  document.write('<h1 style="color:???;">wczytałeś kolor ?????</h1><br />'); } 
-        else if(x_ule == 2 || x_???.toLowerCase() == "????????????") { 
-  document.write('<h6 style="?????????????;">wczytałeś kolor ??????</h6><br />'); 
-  } 
-  } 
- </script>  
- </body> 
-</html> 
-<!--  Ulenberg Z35_JS  --> 
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="UTF-8">
+<title>Ulenberg Z39_JS</title>
+</head>
+<body>
+
+<h1 style="color:green;">MENU</h1>
+
+<p style="color:red;">1 - CZERWONY</p>
+<p style="color:blue;">2 - NIEBIESKI</p>
+
+<input type="text" id="wybor">
+<input type="button" value="Oblicz" onclick="fun_ule()">
+
+<script>
+function fun_ule()
+{
+    var x_ule = document.getElementById("wybor").value;
+
+    if(x_ule == 1)
+    {
+        document.write("<h1 style=\"color:red;\">Wczytałeś kolor czerwony</h1>");
+    }
+    else if(x_ule == 2)
+    {
+        document.write("<h6 style=\"color:blue;\">Wczytałeś kolor niebieski</h6>");
+    }
+}
+</script>
+
+</body>
+</html>
+<!-- Ulenberg Z39_JS -->
