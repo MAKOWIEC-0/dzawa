@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body> 
+		<div style="color:red;font-size:50px;"> 
+		<script language="JavaScript"> 
+		function start_ule()
+		{
+			do
+			{
+			var a_ule=parseFloat(prompt('Podaj bok a = ',''));
+			} while(a_ule<=0)
+			do
+			{
+			var b_ule=parseFloat(prompt('Podaj bok b = ',''));
+			} while(b_ule<=0)
+			do
+			{
+			var c_ule=parseFloat(prompt('Podaj bok c = ',''));
+			} while(c_ule<=0)
+			
+			if((a_ule+b_ule>c_ule)&&(a_ule+c_ule>b_ule)&&(c_ule+b_ule>a_ule))
+			{
+				document.write("Boki to "+a_ule+" "+b_ule+" "+c_ule)
+			} else
+			{
+			start_ule();
+			}
+		}
+		start_ule();
+		</script> 
+		</div>
+	</body> 
+</html> 
